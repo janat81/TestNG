@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="My Blue Rental Car Project" verbose="1" >
+    <test name="Smoke Test"   >
+        <packages>
+            <package name="techproed.tests.smoketest.logintests" />
+        </packages>
+    </test>
+</suite>
+        <!--SUITE > TEST > PACKAGE > GROUPS > CLASSES > CLASS > METHODS > INCLUDE OR EXCLUDE
+        verbose = The amount of info. The bigger number the more info.
+        <package name="techproed.tests.smoketest"/> -> RUNS ALL SMOKETEST PACKAGE
+         -->

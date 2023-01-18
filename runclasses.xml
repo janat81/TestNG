@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Blue Rental Car" verbose="1" >
+    <test name="Login Test Classes" >
+        <classes>
+            <class name="techproed.tests.smoketest.logintests.Day18_PositiveLoginTest" />
+            <class name="techproed.tests.smoketest.logintests.Day19_NegativeLoginTest" />
+            <class name="techproed.tests.dataprovider.Day21_DataProvider2" />
+            <class name="techproed.tests.dataprovider.Day21_DataProvider3" />
+            <class name="techproed.tests.excelautomation.Day20_ExcelLogin" />
+        </classes>
+    </test>
+</suite>
