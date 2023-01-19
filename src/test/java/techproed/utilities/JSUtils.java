@@ -40,7 +40,7 @@ public class JSUtils {
             e.printStackTrace();
         }
     }
-    //Flashing teh background color
+    //Flashing the background color
     public static void flash(WebElement element) {
         String bgColor = element.getCssValue("backgroundcolor");
         for (int i = 0; i < 5; i++) {
