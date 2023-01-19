@@ -1,0 +1,15 @@
+<!-- Run xyzBankTest(), totalPrice() and createPatient() methods as a grup test  -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Practice Project" verbose="1" >
+    <test name="Practice Smoke Test">
+        <groups>
+            <run>
+                <include name="smoke-test"  />
+            </run>
+        </groups>
+
+        <packages>
+            <package name="techproed.tests.*"></package>
+        </packages>
+    </test>
+</suite>

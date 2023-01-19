@@ -25,7 +25,7 @@ public class SaucedemoPrice {
   And
     Flash each web element you used
    */
-    @Test
+    @Test(groups = "smoke-test")
     public void totalPrice() {
 //        Go to  https://www.saucedemo.com/
         Driver.getDriver().get(ConfigReader.getProperty("saucedemo_url"));
@@ -54,8 +54,7 @@ public class SaucedemoPrice {
         assertEquals(129.94, totalPrice);
 
 //        Flash each web element you used
-
-
+        Driver.closeDriver();
     }
 
 }
