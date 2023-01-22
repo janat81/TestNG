@@ -27,6 +27,10 @@ public class Day18_PositiveLoginTest {
         ReusableMethods.waitFor(3);
 //        Verify login is successful
         ReusableMethods.verifyElementDisplayed(homePage.userID);
+
+        // ALTERNATIVELY WE CAN ASSERT IF HOME PAGE LOGIN LINK IS NOT DISPLAYED.
+        // THIS IS NOT RECOMMENDED.
+ //       ReusableMethods.verifyElementNotDisplayed(homePage.homePageLoginLink);
     }
 }
 
