@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TechProEd" verbose="1">
+    <!--        listener tag is used to add Listeners-->
+    <listeners>
+        <!--        Path of the Listener Utility class-->
+        <listener class-name="techproed.utilities.Listeners"></listener>
+    </listeners>
+
+    <test name="TechproEd Test" >
+        <classes>
+            <!--            RUNNING ListenersTest2 class-->
+            <class name="techproed.tests.listeners.ListenersTest4" />
+        </classes>
+    </test>
+</suite>

@@ -2,6 +2,7 @@ package techproed.utilities;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import java.io.IOException;
 public class Listeners implements ITestListener {
     /*
     ITestListener is an interface
@@ -28,6 +29,11 @@ public class Listeners implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
         System.out.println("onTestFailure - Execute AFTER EACH FAILED @Test : "+result.getName());
+        try {
+            ReusableMethods.getScreenshot("TEST CASE FAILED :" + result.getName());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     @Override
     public void onTestSkipped(ITestResult result) {
